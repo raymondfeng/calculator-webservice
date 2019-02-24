@@ -2,7 +2,7 @@ package com.example;
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface = "com.example.Calculator")
+@WebService(endpointInterface = "com.example.Calculator", name = "Calculator", serviceName = "CalculatorService", portName = "CalculatorPort")
 public class CalculatorImpl implements Calculator {
 
 	public int add(int a, int b) {
